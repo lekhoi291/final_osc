@@ -1,0 +1,391 @@
+.upload_preview{
+    background-color: #333;
+    position: relative;
+    padding: 0;
+    user-select: none;
+    margin: 0 auto;
+}
+
+.upload_wrapper{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding: 60px 0 25px;
+    display: block;
+
+    .choose_file_button_wrapper{
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        vertical-align: top;
+        
+        .choose_file_button{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            padding: 13px 80px;
+            border-radius: 5px;
+            background-color: #0096fa;
+            cursor: pointer;
+            font-size: 18px;
+            color: #f5f5f5;
+            border: none;
+            line-height: 1;
+            margin: 0;
+            display: inline-block;
+            box-sizing: content-box;
+        }
+
+        .icon_select_upload{
+            color: #fff;
+            vertical-align: baseline;
+        }
+
+        input{
+            opacity: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+            font-size: 38px;
+            line-height: 1;
+        }
+
+        input[type="file"]{
+            margin: 0;
+            border: none;
+        }
+
+        .upload_note{
+            margin-top: 10px;
+            line-height: 1.3;
+            color: #ccc;
+            font-size: 13.5px;
+        }
+    }
+}
+
+.image_container{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding: 20px 15px;
+    display: block;
+
+    .preview_image{
+        width: 600px;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%;
+        margin: 0 auto;
+        vertical-align: top;    
+        background-color: #4a4a4a;
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+
+        .remove_image{
+            transition: opacity .2s;
+            opacity: .5;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            padding: 3px;
+            line-height: 0.8;
+            background-color: #fff;
+            border-radius: 3px;
+            display: none;
+            cursor: pointer;
+            color: #333;
+            vertical-align: top;
+            font-size: 14px;
+            
+            &::before{
+                content: '\2716'; 
+            }
+
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+
+        &:hover{
+            .remove_image{
+                display: inline-block;
+            }
+        }
+
+        .image-name{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 138px;
+            padding: 3px 6px;
+            font-size: 11px;
+            line-height: 15px;
+            background-color: rgba(0,0,0,.5);
+            direction: ltr;
+            text-align: left;
+            color: white;
+            font-size: 14px;
+        }
+    }
+}
+
+.fade-in{
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.hidden{
+    display: none !important;
+}
+
+.form_submit{
+    min-width: 740px;
+    // background-color: #f4f2f4;
+}
+
+.pic_submit{
+    margin: 0 auto;
+    width: 740px;
+    padding-bottom: 50px;
+    display: block;
+
+    .item{
+        position: relative;
+        padding: 13px 20px;
+        border-top: 1px solid #f6f5f6;
+        line-height: 24px;
+        font-size: 14px;
+
+        dt{
+            display: table-cell;
+            width: 180px;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+            font-size: 100%;
+            vertical-align: baseline;
+        }
+
+        dd{
+            display: table-cell;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+            font-size: 100%;
+        }
+
+        .domains_types{
+            display: none;
+        }
+    }
+
+    .items{
+        position: relative;
+        margin: 10px 0;
+        background-color: #fff;
+        display: block;
+    }
+
+    .select_box{
+        outline: none;
+    }
+
+    .unit{
+        margin: 20px 0;
+        display: block;
+
+        .item:first-child{
+            border-top: none;
+        }
+    }
+
+    .text{
+        padding: 0;
+
+        textarea{
+            height: 108px;
+            padding-bottom: 0;
+            resize: vertical;
+        }
+    }
+
+    .fail-container{
+        display: none;
+        position: absolute;
+        bottom: calc(100% + 10px);
+        right: -2px;
+        padding: 8px 10px;
+        max-width: 300px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 1.5;
+        background-color: tomato;
+        border-radius: 5px;
+    }
+
+    .input{
+        appearance: none;
+        padding: 16px 20px; 
+        width: 100%;
+        font-size: 14px;
+        height: auto;
+        line-height: 18px;
+        vertical-align: top;
+        background-color: transparent;
+        border: none;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .options{
+        position: absolute;
+        bottom: 7px;
+        right: 15px;
+        padding: 5px;
+        background-color: hsla(0,0%,100%,.75);
+        border-radius: 3px;
+        font-size: 12px;
+    }
+
+    .count-container{
+        color: #999;
+    }
+
+    dl{
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        font-size: 100%;
+    }
+
+    ul{
+        list-style: none;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+
+    .inline_list{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .inline_list li{
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    label{
+        cursor: pointer;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        font-size: 100%;
+    }
+
+    label input[type="radio"]{
+        margin-right: 4px;
+    }
+
+    .warning-container{
+        margin-top: 40px;
+        padding: 20px 20px;
+        // text-align: center;
+        background-color: #fff;
+        border-radius: 8px;
+
+        .warning-message{
+            display: inline-block;
+            text-align: left;
+        }
+    }
+
+    .last-warning{
+        text-align: center;
+        border: none;
+        padding: 0;
+        margin: 40px 0 24px;
+        position: relative;
+        line-height: 24px;
+        font-size: 15px;
+        color: #777;
+    }
+
+    .submit-container{
+        margin: 0 0 40px;
+        padding: 0;
+        text-align: center;
+
+        .action-submit{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            appearance: none;
+            padding: 14px 80px;
+            font-size: 22px;
+            color: #f5f5f5;
+            box-sizing: content-box;
+            display: inline-block;
+            margin: 0;
+            font-family: inherit;
+            font-weight: 700;
+            line-height: 1;
+            background-color: #0096fa;
+            border: none;
+            cursor: pointer;
+            align-items: flex-start;
+            text-align: center;
+            user-select: none;
+            white-space: pre;
+            outline: none;
+        }
+    }
+
+    ._required-badege{
+        top: 16px;
+    }
+}
+
+._required-badge{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    margin: 16px 5px 0 0;
+    padding: 4px 6px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1;
+    white-space: nowrap;
+    background-color: tomato;
+    border-radius: 5px;
+}

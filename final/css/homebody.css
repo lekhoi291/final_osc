@@ -1,0 +1,383 @@
+.homebody-wrapper {
+  margin: 10px auto 0;
+  width: 970px;
+}
+
+.homebody-wrapper .my-page .layout-west {
+  float: left;
+  width: 186px;
+}
+
+.homebody-wrapper .my-page .layout-west .menu-unit {
+  width: 174px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #d6dee5;
+}
+
+.homebody-wrapper .my-page .layout-west .menu-unit ul {
+  margin-bottom: 7px;
+}
+
+.homebody-wrapper .my-page .layout-west .menu-unit ul + ul::before {
+  display: block;
+  content: "";
+  margin: 0px 8px 8px;
+  height: 1px;
+  background-color: #eee;
+}
+
+.homebody-wrapper .my-page .layout-west .menu-unit ul.profile li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 8px 0px;
+}
+
+.homebody-wrapper .my-page .layout-west .menu-unit ul.profile .user-icon {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  margin-right: 4px;
+}
+
+.homebody-wrapper .my-page .layout-west .menu-unit ul.profile .user-name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+}
+
+.homebody-wrapper .my-page .layout-west .menu-unit ul.profile .user-name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #333;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.homebody-wrapper .my-page .layout-west .menu-unit ul.profile .badge {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 4px;
+}
+
+.homebody-wrapper .my-page .layout-west .menu-unit ul.profile .badge-campaign {
+  text-align: center;
+  padding: 9px 0px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #ffecd9;
+  color: #faa200;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.homebody-wrapper .my-page .layout-west .menu-unit ul.menu-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 8px;
+}
+
+.homebody-wrapper .my-page .layout-west .menu-unit ul.menu-item a:hover {
+  background-color: #f5f5f5;
+}
+
+.homebody-wrapper .my-page .layout-west .menu-unit ul.menu-item a .count {
+  color: #258fB8;
+}
+
+.homebody-wrapper .my-page .layout-west .menu-unit ul a {
+  line-height: 1;
+  color: #666;
+}
+
+.homebody-wrapper .my-page .layout-west .menu-unit ul a:hover {
+  text-decoration: none;
+}
+
+.homebody-wrapper .my-page .layout-east {
+  float: left;
+  width: 784px;
+}
+
+.homebody-wrapper .my-page .layout-east .content-east {
+  width: 784px;
+  margin: 0;
+  padding: 0;
+}
+
+.homebody-wrapper .my-page .layout-east .content-east .content-main {
+  float: left;
+  margin: 0 10px 0 0;
+  padding: 0px;
+  width: 550px;
+}
+
+.homebody-wrapper .my-page .layout-east .content-east .content-right {
+  float: left;
+  width: 224px;
+}
+
+#item-container {
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #d6dee5;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  overflow: visible;
+}
+
+#item-container h2 {
+  font-weight: bold;
+  padding: 0 14px;
+}
+
+#item-container #user-recommend-module {
+  border-bottom: solid 1px #ebebeb;
+  margin-bottom: 15px;
+  padding: 0 7px;
+}
+
+#item-container #user-recommend-module h2 {
+  margin-top: 15px;
+  padding: 0 7px;
+}
+
+#item-container .user-item {
+  display: inline-block;
+}
+
+#item-container .user-item > li:nth-child(n + 8) {
+  display: none;
+}
+
+#item-container .user-item > li, #item-container .user-item {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 10px 7px 15px 7px;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+#item-container .user-item > li.see-more, #item-container .user-item.see-more {
+  background-color: #f5f5f5;
+  background-image: url("dot-menu-2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 0;
+}
+
+#item-container ._image-item {
+  margin: 10px 0 0;
+  margin-left: 0px;
+}
+
+#item-container .image-item {
+  height: 248px;
+  margin: 0;
+}
+
+#item-container .item {
+  clear: both;
+  position: relative;
+  overflow-anchor: none;
+}
+
+#item-container .item.closed .toggle {
+  background-position: 0 -22px !important;
+}
+
+#item-container .item.closed .content {
+  display: none;
+}
+
+#item-container .item .toggle {
+  background-position: 0 -33px !important;
+}
+
+#item-container .item header h1 {
+  margin: 10px 0;
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 30px;
+  background-color: #f2f4f6;
+}
+
+#item-container .item header h1 a {
+  color: #333;
+}
+
+#item-container .item header .edit-delete {
+  font-weight: normal;
+  float: right;
+  color: #258fb8;
+}
+
+#item-container .item header .edit-delete .footer li {
+  list-style-type: none;
+  float: left;
+  padding-left: 5px;
+}
+
+#item-container .item header .edit-delete .footer li:nth-child(1) {
+  display: block;
+  padding-right: 5px;
+}
+
+#item-container .item header .edit-delete .action-submit {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 1px 10px;
+  font-size: 15px;
+  color: #f5f5f5;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: inline-block;
+  margin: 0;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1;
+  background-color: #0096fa;
+  border: none;
+  cursor: pointer;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: pre;
+  outline: none;
+}
+
+#item-container .item header .edit-delete a {
+  color: #258fb8;
+}
+
+#item-container .item p {
+  margin: 10px 0 10px 10px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+#item-container .item .content {
+  margin-top: 10px;
+}
+
+#item-container .item .content p {
+  padding: 0 0 10px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+#item-container .item .content .about-image {
+  width: 100%;
+}
+
+#item-container .item .content ul.images {
+  margin: 0 -20px;
+  padding-left: 30px;
+}
+
+#item-container .item .content ul.images li.image {
+  float: left;
+  overflow: auto;
+  width: 156px;
+  height: 220px;
+  margin: 0 20px 0 0;
+  text-align: center;
+}
+
+#item-container .item .content ul.images li.image a:visited {
+  color: #999;
+}
+
+#item-container .item .content ul.images li.image a:hover img {
+  border-color: #258fb8;
+}
+
+#item-container .item .content ul.images li.image a:hover h1 {
+  text-decoration: underline;
+}
+
+#item-container .item .content ul.images li.image a img {
+  padding: 2px;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+
+#item-container .item .content ul.images li.image a h1 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #555;
+}
+
+#item-container .item .content ul.images li.image div.user {
+  margin: 0;
+  font-size: 11px;
+  line-height: normal;
+}
+
+#item-container .item .content ul.images li.image div.user a {
+  color: #555;
+}
+
+#item-container .item .content div.more {
+  clear: both;
+  margin: 0 0 15px 0;
+  text-align: right;
+}
+
+#item-container .item .content ul.more {
+  clear: both;
+  margin: 10px 0 15px 0;
+  text-align: right;
+}
+
+#item-container .item .content ul.more li {
+  display: inline;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+#item-container .item .content ul.pagination {
+  clear: both;
+  margin: 10px 0 15px 0;
+  text-align: center;
+}
+
+#item-container .item .content ul.pagination li {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 15px;
+}
+/*# sourceMappingURL=homebody.css.map */
